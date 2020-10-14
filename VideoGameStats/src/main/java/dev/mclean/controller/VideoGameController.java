@@ -25,7 +25,7 @@ public class VideoGameController {
 	
 	@GetMapping(value = "/game/{id}", produces = "application/json")
 	public VideoGame getGame(@PathVariable("id") int id) throws IOException {
-		return vgs.getVideoGame(id);
+		return vgs.getVideoGame(id-1);
 		
 	}
 	
